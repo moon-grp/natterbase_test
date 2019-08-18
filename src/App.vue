@@ -1,31 +1,75 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <div>
+      <div class="container">
+  <b-navbar toggleable="lg" type="light" class="nav_bg">
+    
+    <b-navbar-brand href="#" class="nav_brd">
+        <img src="https://placekitten.com/g/30/30" alt="Kitten">
+    </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item> <router-link to="/dashboard">Dashboard </router-link></b-nav-item>
+        <b-nav-item href="#" >Buy Insurance</b-nav-item>
+        <b-nav-item > <router-link to="/settings"> Account Settings </router-link></b-nav-item>
+      </b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <h3><b-badge >LD</b-badge></h3>
+        <b-nav-item-dropdown right>
+          <!-- Using 'button-content' slot -->
+          
+          <template slot="button-content">Lois Durrello</template>
+          <b-dropdown-item href="#">Profile</b-dropdown-item>
+          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+        </b-nav-item-dropdown>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#app{
+  background-color: azure;
+  height: 100%;
+}
+.nav_bg{
+  background-color:white;
+}
+.nav_brd{
+  padding: 20px;
+}
+.badge{
+  height: 40px;
+  margin: 2px;
+  width: 40px;
   text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
