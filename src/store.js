@@ -6,11 +6,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    stats:[]
+    stats:[],
+    application:[]
   },
   mutations: {
    SET_STATS(state, stats){
      state.stats=stats
+   },SET_APPLICATION(state, application){
+    state.application=application
    }
 
   },
@@ -31,6 +34,21 @@ export default new Vuex.Store({
        .catch(err=>{
          console.log(err)
        })
+       
+        
+     
+    }, 
+    //fix app api
+    get_applications({commit}){
+      const config={
+        headers:{
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjYjg2NWZmMzFhZWRkMzQxNDU0OTQ2YiIsImlhdCI6MTU2NTk0Nzg1NCwiZXhwIjoxNTY1OTU1MDU0fQ.5ujc_dMloqYdyoQN556PhGwIqa1OfGwt06vD5iKu-lg"
+        }
+      };
+      axios.get('http://test.natterbase.com:5050/api/interview/get-statistics')
+      .then(resp=>{
+        console.log("for stats")
+      })
        
         
      

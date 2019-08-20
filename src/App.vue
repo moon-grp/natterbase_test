@@ -5,7 +5,7 @@
   <b-navbar toggleable="lg" type="light" class="nav_bg">
     
     <b-navbar-brand href="#" class="nav_brd">
-        <img src="https://placekitten.com/g/30/30" alt="Kitten">
+         <font-awesome-icon class="card_icn" icon="crop-alt" size="2x" />
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
