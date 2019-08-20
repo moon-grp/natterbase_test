@@ -142,17 +142,7 @@ export default {
   },
    data() {
       return {
-     /*   items: [
-          { sn: 40, insurance_type: 'Dickerson', amount: 'Macdonald', date:'2019', status:'completed', action:'make a claim' },
-          { sn: 40, insurance_type: 'Dickerson', amount: 'Macdonald', date:'2019', status:'completed', action:'make a claim' },
-          { sn: 40, insurance_type: 'Dickerson', amount: 'Macdonald', date:'2019', status:'completed', action:'make a claim' },
-          { sn: 40, insurance_type: 'Dickerson', amount: 'Macdonald', date:'2019', status:'completed', action:'make a claim' },
         
-        ],
-*/      fields:[
-              'age',
-              'sex'
-          ]     
       }
     },
     computed: {
@@ -211,6 +201,7 @@ mounted(){
 }
 
 .table_s{
-  margin-top:50px
+  margin-top:50px;
+  margin-bottom: 50px;
 }
 </style>
