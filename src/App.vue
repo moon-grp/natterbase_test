@@ -57,7 +57,7 @@
 
 <style>
 #app{
-  background-color: azure;
+  background-color: white;
   height: 100%;
 }
 .nav_bg{

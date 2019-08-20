@@ -149,7 +149,8 @@ export default {
 
 .card_s{
    margin-bottom: 100px;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);   
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);  
+    background-color: whitesmoke 
 }
 
 .txt_tp{

@@ -9,7 +9,7 @@
           <div class="col-sm">
   <b-card
     style="max-width: 20rem;"
-    class="mb-2"
+    class="mb-2 card_s"
   >
    <font-awesome-icon class="card_icn" icon="shield-alt" size="2x" />
     <b-card-text>
@@ -23,7 +23,7 @@
                <div class="col-sm">
   <b-card
     style="max-width: 20rem;"
-    class="mb-2"
+    class="mb-2 card_s"
   >
    <font-awesome-icon class="card_icn" icon="shield-alt" size="2x" />
     <b-card-text>
@@ -37,7 +37,7 @@
                <div class="col-sm">
   <b-card
     style="max-width: 20rem;"
-    class="mb-2"
+    class="mb-2 card_s"
   >
   <div>
    <font-awesome-icon class="card_icn" icon="clipboard-list" size="2x" />
@@ -53,7 +53,7 @@
   <div class="col-sm">
   <b-card
     style="max-width: 20rem;"
-    class="mb-2"
+    class="mb-2 card_s"
   >
    <font-awesome-icon class="card_icn" icon="clipboard-list" size="2x" />
     <b-card-text>
@@ -83,14 +83,40 @@
       </b-tr>
             </b-thead>
               <b-tbody>
-        <b-td>{{stats.statistics.totalInsuranceAmount}}</b-td>
-        <b-td>22</b-td>
-        <b-td>43</b-td>
-        <b-td>22</b-td>
-        <b-td>43</b-td>
-        <b-td>22</b-td>
+        <b-td > 1 </b-td>
+        <b-td>{{application.applications[0].insuranceType}}</b-td>
+        <b-td>{{application.applications[0].amount}}</b-td>
+        <b-td>{{application.applications[0].createdDate}}</b-td>
+        <b-td>{{application.applications[0].complete}}</b-td>
+        <b-td><b-btn>Make a claim</b-btn></b-td>
         <b-td>more action</b-td>
-        
+        <b-tr>
+           <b-td > 2 </b-td>
+        <b-td>{{application.applications[1].insuranceType}}</b-td>
+        <b-td>{{application.applications[1].amount}}</b-td>
+        <b-td>{{application.applications[1].createdDate}}</b-td>
+        <b-td>{{application.applications[1].complete}}</b-td>
+        <b-td><b-btn>Complete Process</b-btn></b-td>
+        <b-td>more action</b-td>
+        </b-tr>
+        <b-tr>
+              <b-td > 3 </b-td>
+        <b-td>{{application.applications[2].insuranceType}}</b-td>
+        <b-td>{{application.applications[2].amount}}</b-td>
+        <b-td>{{application.applications[2].createdDate}}</b-td>
+        <b-td>{{application.applications[2].complete}}</b-td>
+        <b-td><b-btn>Make a Claim</b-btn></b-td>
+        <b-td>more action</b-td>
+        </b-tr>
+        <b-tr>
+           <b-td > 4 </b-td>
+        <b-td>{{application.applications[3].insuranceType}}</b-td>
+        <b-td>{{application.applications[3].amount}}</b-td>
+        <b-td>{{application.applications[3].createdDate}}</b-td>
+        <b-td>{{application.applications[3].complete}}</b-td>
+        <b-td><b-btn>Complete Process</b-btn></b-td>
+        <b-td>more action</b-td>
+        </b-tr>
               </b-tbody>
        </b-table-simple>
      
@@ -176,6 +202,12 @@ mounted(){
 .card_icn{
   margin-top: 10px;
   margin-bottom: 10px;
+
+}
+
+.card_s{
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);  
+    background-color: whitesmoke 
 }
 
 .table_s{
